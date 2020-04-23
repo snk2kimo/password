@@ -6,7 +6,7 @@
 # 如果失敗，印出"密碼錯誤!還有__次機會!"
 
 err = 3 # 錯誤剩餘次數  
-while True:
+while err > 0:
 	password = input('請輸入密碼：')
 	if password == 'a123456':
 		print('登入成功')
@@ -14,5 +14,3 @@ while True:
 	else:
 		err = err - 1
 		print('密碼錯誤!還有', err, '次機會!')
-		if err == 0:
-			break
